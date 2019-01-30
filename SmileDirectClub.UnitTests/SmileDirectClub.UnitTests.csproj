@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.1.18" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.1.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmileDirectClub.Api\SmileDirectClub.Api.csproj" />
+    <ProjectReference Include="..\SmileDirectClub.Business\SmileDirectClub.Business.csproj" />
+    <ProjectReference Include="..\SmileDirectClub.Services\SmileDirectClub.Services.csproj" />
+    <ProjectReference Include="..\SmileDirectClub.Shared\SmileDirectClub.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
